@@ -358,6 +358,12 @@ pip list | grep -E "streamlit|pandas|plotly"
 python -c "import streamlit, pandas, plotly; print('Todas as dependências OK')"
 ```
 
+## CRIADORES
+
+    - LILIANE NETO
+    - x x x x x
+
+
 ## 👥 Contribuição
 
 Contribuições são bem-vindas! Para contribuir:
