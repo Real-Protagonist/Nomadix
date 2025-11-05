@@ -1,0 +1,3 @@
+"""
+Nomadix Pages Package
+"""
