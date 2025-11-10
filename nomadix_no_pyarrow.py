@@ -50,7 +50,7 @@ def main():
         layout="wide"
     )
     
-    # CSS para cards
+    # CSS para cards e perfil de usuário
     st.markdown("""
     <style>
     .metric-card {
@@ -68,7 +68,49 @@ def main():
     .metric-title { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; }
     .metric-value { font-size: 2rem; font-weight: bold; }
     .metric-delta { font-size: 0.8rem; margin-top: 0.5rem; }
+    
+    /* Perfil de usuário */
+    .user-profile {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        background: white;
+        border-radius: 50px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .user-profile:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+    
+    .profile-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
     </style>
+    """, unsafe_allow_html=True)
+    
+    # Perfil de usuário
+    st.markdown("""
+        <div class="user-profile" title="Perfil do Usuário">
+            <div class="profile-avatar">AD</div>
+            <span style="margin-left: 0.5rem; font-weight: 500; color: #333;">Admin</span>
+        </div>
     """, unsafe_allow_html=True)
     
     # Título
